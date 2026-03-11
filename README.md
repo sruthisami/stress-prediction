@@ -3,7 +3,6 @@
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![Scikit-Learn](https://img.shields.io/badge/ML-ScikitLearn-orange)
 ![Model](https://img.shields.io/badge/Model-RandomForest-green)
-![Status](https://img.shields.io/badge/Status-Completed-success)
 
 Machine Learning models for predicting **student stress levels** and **menstrual-cycle related stress patterns** to support a **mental health monitoring system**.
 
@@ -129,24 +128,68 @@ Predictions
    ▼
 Mental Health Dashboard
 ```
+---
+
+#  Sample Input & Output
+
+## 1️⃣ Stress Level Predictor
+
+### Sample Input
+
+```python
+input_data = [[
+    6,   # study_hours
+    5,   # sleep_hours
+    3,   # assignments_pending
+    2,   # exam_pressure
+    4,   # social_activity
+    1,   # physical_activity
+    3,   # screen_time
+    2,   # financial_stress
+    1,   # family_pressure
+    3,   # health_issues
+    2,   # relationship_issues
+    4,   # academic_workload
+    2,   # extracurricular_load
+    3,   # concentration_level
+    2    # mood_rating
+]]
+```
+
+### Output
+
+```
+Predicted Stress Level: 2
+Meaning: Moderate Stress
+```
 
 ---
 
-#  Usage
+## 2️⃣ Period Stress Predictor
 
-### Load Model
-
-```python
-import joblib
-
-model = joblib.load("classifier.joblib")
-```
-
-### Predict
+### Sample Input
 
 ```python
-prediction = model.predict(input_data)
+period_flow = 1
+expected_vs_actual_date_difference = 2
 ```
+
+### Output
+
+```
+Predicted Period Stress Score: 1.18
+```
+
+---
+
+## Interpretation
+
+| Score | Stress Level |
+|------|------|
+0 | No Stress |
+1 | Mild |
+2 | Moderate |
+3 | High |
 
 ---
 
@@ -161,6 +204,3 @@ This system enables:
 
 ---
 
-# 👩‍💻 Author
-
-Developed for **Student Mental Health Monitoring System**
