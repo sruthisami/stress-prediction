@@ -181,20 +181,6 @@ Predicted Period Stress Score: 1.18
 
 ---
 
-# Model Usage
-
-```python
-import joblib
-
-model = joblib.load("classifier.joblib")
-
-prediction = model.predict(input_data)
-
-print(prediction)
-```
-
----
-
 # Use Case
 
 This system enables:
