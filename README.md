@@ -8,7 +8,7 @@ Machine Learning models for predicting **student stress levels** and **menstrual
 
 # Models
 
-| Model | Algorithm | Dataset Size | Features | Performance |
+| Model | Algorithm | Dataset Size | Features | Performance Metrics |
 |------|------|------|------|------|
 | Stress Level Predictor | Random Forest Classifier | 1100 | 15 | **88.18% Accuracy** |
 | Period Stress Predictor | Random Forest Regressor | 897 | 2 | **R² = 0.832** |
