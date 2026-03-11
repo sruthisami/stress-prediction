@@ -1,14 +1,12 @@
-#  Student Stress Prediction System
+# Student Stress Prediction System
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
-![Scikit-Learn](https://img.shields.io/badge/ML-ScikitLearn-orange)
-![Model](https://img.shields.io/badge/Model-RandomForest-green)
 
 Machine Learning models for predicting **student stress levels** and **menstrual-cycle related stress patterns** to support a **mental health monitoring system**.
 
 ---
 
-# 📊Models
+# Models
 
 | Model | Algorithm | Dataset Size | Features | Performance |
 |------|------|------|------|------|
@@ -17,7 +15,7 @@ Machine Learning models for predicting **student stress levels** and **menstrual
 
 ---
 
-#  Project Structure
+# Project Structure
 
 ```
 .
@@ -31,7 +29,7 @@ Machine Learning models for predicting **student stress levels** and **menstrual
 
 ---
 
-#  Model 1 — Stress Level Predictor
+# Model 1 — Stress Level Predictor
 
 **Target Variable**
 
@@ -66,9 +64,9 @@ Cross Validation | **~88%** |
 
 ---
 
-#  Model 2 — Menstrual Cycle Stress Predictor
+# Model 2 — Menstrual Cycle Stress Predictor
 
-**Features**
+### Features
 
 | Feature | Description |
 |------|------|
@@ -93,19 +91,19 @@ Accuracy (±0.5) | **65.56%** |
 
 ---
 
-# ⚙️ Tech Stack
+# Tech Stack
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Joblib
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Matplotlib  
+- Seaborn  
+- Joblib  
 
 ---
 
-#  System Architecture
+# System Architecture
 
 ```
 User Data
@@ -128,11 +126,12 @@ Predictions
    ▼
 Mental Health Dashboard
 ```
+
 ---
 
-#  Sample Input & Output
+# Sample Input & Output
 
-## 1️⃣ Stress Level Predictor
+## Stress Level Predictor
 
 ### Sample Input
 
@@ -160,12 +159,12 @@ input_data = [[
 
 ```
 Predicted Stress Level: 2
-Meaning: Moderate Stress
+Interpretation: Moderate Stress
 ```
 
 ---
 
-## 2️⃣ Period Stress Predictor
+## Period Stress Predictor
 
 ### Sample Input
 
@@ -182,25 +181,27 @@ Predicted Period Stress Score: 1.18
 
 ---
 
-## Interpretation
+# Model Usage
 
-| Score | Stress Level |
-|------|------|
-0 | No Stress |
-1 | Mild |
-2 | Moderate |
-3 | High |
+```python
+import joblib
+
+model = joblib.load("classifier.joblib")
+
+prediction = model.predict(input_data)
+
+print(prediction)
+```
 
 ---
 
-#  Use Case
+# Use Case
 
 This system enables:
 
 - Stress level prediction  
 - Menstrual-cycle stress analysis  
 - Early mental health monitoring  
--  Stress trend visualization  
+- Stress trend visualization  
 
 ---
-
